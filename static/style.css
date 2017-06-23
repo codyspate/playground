@@ -35,18 +35,19 @@ body{
 }
 
 .card{
-  color: white;
+  color: #d4d4d4;
   background-color: #666;
   height: 300px;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .card-title{
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #444;
+  background-color: #313131;
   height: 50px;
 }
 
@@ -57,24 +58,49 @@ body{
 .card-body{
   top: 100%;
   height: 100%;
+  width: 100%;
   padding: 2rem;
-  position: relative;
-  background-color: rgba(0,0,0,0.2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
   transition: all ease-out 0.2s;
-  z-index: 60;
+  z-index: 11;
 }
 
 .card:hover .card-body{
   top: 0;
 }
 
+.card-body-wrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 .sog-video{
   position: absolute;
-  z-index: 50
   top: 0;
   left: 0;
-  height:100%;
+  height: 100%;
   width: auto;
+}
+
+.video-box{
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.video-overlay{
+  position: absolute;
+  float:left;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
 }
 
 .nav{

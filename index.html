@@ -40,19 +40,28 @@
               <h2>Hover Over Me!</h2>
             </div>
           </div>
-          <video class="sog-video" loop muted preload="auto">
-            <source src="static/arma_m240.mp4" type="video/mp4">
-              Your browser does not support videos
-          </video>
-          <div class="card-body">
-            <h4>Things are happening</h4>
-            <p>
-              Can you see it
-            </p>
+          <div class="card-body-wrapper">
+            <div class="video-box">
+              <div class="video-overlay"></div>
+              <video id="sogVideo" class="sog-video" loop muted autoplay preload="auto">
+                <source src="static/arma_m240.mp4" type="video/mp4">
+                  Your browser does not support videos
+              </video>
+            </div>
+            <div class="card-body">
+              <h3>Things are happening</h3>
+              <p>
+                Can you see it
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script>
+  var vid = document.getElementById("sogVideo");
+  vid.playbackRate = 0.5;
+  </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
