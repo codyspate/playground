@@ -1,0 +1,112 @@
+body{
+  background-color: #222;
+  height: 100%;
+}
+
+.container{
+  margin: auto;
+}
+
+@media (min-width: 981px){
+  .container{
+    width: 80%;
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 980px){
+  .container{
+    width: 90%;
+  }
+}
+
+
+.header .banner{
+  height: 250px;
+  background-color: #555;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-title h1{
+  color: white;
+}
+
+.card{
+  color: white;
+  background-color: #666;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.card-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #444;
+  height: 50px;
+}
+
+.card-title h2{
+  margin: 0;
+}
+
+.card-body{
+  top: 100%;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+  background-color: rgba(0,0,0,0.2);
+  transition: all ease-out 0.2s;
+  z-index: 60;
+}
+
+.card:hover .card-body{
+  top: 0;
+}
+
+.sog-video{
+  position: absolute;
+  z-index: 50
+  top: 0;
+  left: 0;
+  height:100%;
+  width: auto;
+}
+
+.nav{
+  height: auto;
+  background-color: #303338;
+  width: 100%;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.nav ul{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul a:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav ul li{
+  display: flex;
+  align-content: center;
+}
+
+.nav ul a{
+  color: white;
+  text-decoration: none;
+  padding: .5rem .8rem;
+  font-size: 1.5rem;
+  transition: all ease-out .15s;
+}
