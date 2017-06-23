@@ -83,7 +83,7 @@ body{
 .sog-video{
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100px;
   height: 100%;
   width: auto;
 }
